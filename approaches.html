@@ -163,7 +163,35 @@
       								
 									<p> </p>
 
+									<h3 class="major">Approaches Used</h3>
+									<p>Once we had a clear understanding of our given dataset, we could start applying different Machine Learning algorithms to perform our Coupon Prediction Task
+									We started off with the:
+									<ul>
+										<li>
+											Nearest Neighbor Approach: This is a non parametric approach for classification and regression. In a classification task, an object is classified by its majority vote of its neighbors, and the object is assigned to the class most common among its nearest 'k' neighbors. Since K-NN is a type of instance based learning, or lazy learning, there is no training time. This was quite beneficial, because of the large size of the dataset, training times would range from hours to weeks depending on the performance of the Computer used. The attributes used for a Nearest Neighbor approach include dates available, genre, price, discount etc.
+											<p>
+												In our project, we used the following Nearest Neighbor approaches and got the following accuracies:
+												<ul>
+													<li>
+														3-NN: 37.91%
+													</li>
+													<li>
+														5-NN: 34.08%
+													</li>
+													<li>
+														10-NN: 29.44%
+													</li>
+												</ul>
+											</p>
+										</li>
+										<li>
+											Decision Tree: A decision tree is a support tool that uses a tree-like graph or a model of decisions and their possible consequences. The attributes used for the Decision Tree approach include dates available, genre, price, discount etc. However, decision trees only provided an accuracy of 29.48%
+										</li>
 
+										<li>
+											Naive Bayes: A Naive Bayes classifier is a classification technique which is based on Baye's Theorem with an assumption of independence amongst the classifiers. Using this approach, we got an accuracy of 31.07%
+										</li>
+									</ul></p>
 
 									<h3 class="major">Recommending Coupons</h3>
 									<p>We could determine a few things about users by past coupon purchases, but some had very little history on the site. For users with no information from either their reported location or past purchases, we simply recommended coupons that we predicted to be popular. In cases where we had past purchases, we looked at their location by prefecture and small area as well as the genre of coupon they bought most frequently. We could then recommend the most popular coupons in those more specific subsections of the coupon area.</p>
