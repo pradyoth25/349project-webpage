@@ -59,7 +59,7 @@
 
 
 									<h3 class="major">Algorithms</h3>
-									<p>A Naive Bayes classifier was used to predict the popularity of coupons, as it had the best results with the training data, getting 31.065% popularity correct, whereas the J48 decision tree predicted 29.475% of popularity categories correctly. Naive Bayes was useful because we believe that the attributes of the data are largely independent from each other.</p>
+									<p>A 3-Nearest Neighbors classifier was used to predict the popularity of coupons, as it had the best results with the training data, getting 37.91% popularity correct, whereas the next best, a Naive Bayes classifier, got only 31.07% correct. Nearest Neighbors is a commonly used algorithm for recommender systems. Since there were not many unique values for the attributes of the coupons, higher numbers of nearest neighbors produced more noise and reduced accuracy.</p>
 									<a class="image"><img src="images/classifieraccuracy.png" alt="" /></a>
 									<p><b>Figure 1.</b> 10-fold cross validation accuracy on various classifiers</p>
 									<h3 class="major">Final Results and Future Work</h3>
