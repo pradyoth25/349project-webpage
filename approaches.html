@@ -70,6 +70,63 @@
 											Purchases [168,996 unique purchases]: We have information about the various purchases made inlcuding the location, number of purchased items, data of purchase etc
 										</li>
 									</ul></p>
+									<h3 class="major">Graphical Representation of Data</h3>
+									<p>Here are some of the most important graphs showing the data in a more presentable manner</p>
+									<!-- Slideshow starts here -->
+									<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 14</div>
+    <img src="images/1.PNG" style="width:100%">
+    <div class="text">Number of records vs diff attributes</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 14</div>
+    <img src="images/2.PNG" style="width:100%">
+    <div class="text">Coupon ID vs Total % of User IDs</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/5.PNG" style="width:100%">
+    <div class="text">Bubble Chart for different Coupon Categories</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/6.PNG" style="width:100%">
+    <div class="text">Average Catalog Price vs Coupon Category</div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/7.PNG" style="width:100%">
+    <div class="text">Number of records vs Coupon Category based on Capsule Text</div>
+  </div>
+
+    <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/8.PNG" style="width:100%">
+    <div class="text">Number of records vs Coupon Category based on Genre</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+   <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>  
+</div>
+
+
+
 
 									<h3 class="major">Finding Popular Coupons</h3>
 									<p>In order to predict which coupons would be popular in the future, we had to determine which ones had been popular in the past. We counted up the number of purchases for each coupon in the training data, and categorized them by popularity, with 17 different categories. Using a Naive Bayes Classifier, we would predict the popularity of other coupons based on their attributes. We initially thought a k-nearest neighbors classifier would be the most appropriate, but after trying that against a few other classifiers we determined that it was less effective than we expected.</p>
