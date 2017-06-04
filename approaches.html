@@ -54,6 +54,23 @@
 							<div class="wrapper">
 								<div class="inner">
 
+								<h3 class="major">Data Set</h3>
+									<p>We have a year of data from 07/01/2011 to 06/30/2012 and the last week is used for evaluation purposes. Namely, we have the following data files:
+									<ul>
+										<li>
+											Users [22,873 unique users]: We have information about the state, sex, age, User ID hashtag etc
+										</li>
+										<li>
+											Coupons [19,413 unique coupons]: We have some information about the category, store location, state, store rate, discount, validity period, Coupon ID Hashtag etc
+										</li>
+										<li>
+											Visits [2,833,180 unique visits]: We have information about the visits of different users on the website like date of visit, User ID, Coupon ID etc
+										</li>
+										<li>
+											Purchases [168,996 unique purchases]: We have information about the various purchases made inlcuding the location, number of purchased items, data of purchase etc
+										</li>
+									</ul></p>
+
 									<h3 class="major">Finding Popular Coupons</h3>
 									<p>In order to predict which coupons would be popular in the future, we had to determine which ones had been popular in the past. We counted up the number of purchases for each coupon in the training data, and categorized them by popularity, with 17 different categories. Using a Naive Bayes Classifier, we would predict the popularity of other coupons based on their attributes. We initially thought a k-nearest neighbors classifier would be the most appropriate, but after trying that against a few other classifiers we determined that it was less effective than we expected.</p>
 
