@@ -196,16 +196,16 @@
 									<h3 class="major">Recommending Coupons</h3>
 									<p>We could determine a few things about users by past coupon purchases, but some had very little history on the site. For users with no information from either their reported location or past purchases, we simply recommended coupons that we predicted to be popular. In cases where we had past purchases, we looked at their location by prefecture and small area as well as the genre of coupon they bought most frequently. We could then recommend the most popular coupons in those more specific subsections of the coupon area. However, for final coupon prediction, we tried Cosine Similarity methods
 									<li>
-											Cosine Similarity methods: Similar to Problem Set 4, where we used Cosine Similarity to predict the Caption of an image, we used a Cosine Similarity approach to predict whether a user purchased a particular coupon or not. The input vector has a list of features which correspond to the Coupon attributes like Usable Date, Usable period, Location, Genre etc.
+											Cosine Similarity methods: Similar to Problem Set 4, where we used Cosine Similarity to predict the Caption of an image, we used a Cosine Similarity approach to predict whether a user purchased a particular coupon or not. The input vector has a list of features which correspond to the Coupon attributes like Usable Date, Usable Period, Location, Genre etc. We used three main approaches:
 											<ul>
 												<li>
-													Using only Cosine Similarity, the accuracy obtained was 0.78%
+													Using only Cosine Similarity,
 												</li>
 												<li>
-													Taking Coupon Viewed Logs into Consideration, the accuracy was 0.89%
+													Taking Coupon Viewed Logs into Consideration, and
 												</li>
 												<li>
-													Using Pearson Correlation between Sparse Matrices, we got 1.095%
+													Using Pearson Correlation between Sparse Matrices
 												</li>
 											</ul>
 
