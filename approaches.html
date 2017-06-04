@@ -163,9 +163,9 @@
       								
 									<p> </p>
 
-									<h3 class="major">Approaches Used</h3>
-									<p>Once we had a clear understanding of our given dataset, we could start applying different machine learning algorithms to perform our coupon prediction task</p>
-									<p>Classifiers Used</p>
+									<h3 class="major">Baseline Approach</h3>
+									<p>We wanted to predict the most popular coupon in a given area and then just output this as a baseline value as we checked the location for each user. </p>
+									<p>Classifiers Used to predict the most popular coupon for a given area</p>
 									<ul>
 										<li>
 											Nearest Neighbor: This is a non parametric approach for classification and regression. In a classification task, an object is classified by its majority vote of its neighbors, and the object is assigned to the class most common among its nearest 'k' neighbors. Since K-NN is a type of instance based learning, or lazy learning, there is no training time. This was quite beneficial, because of the large size of the dataset, training times would range from hours to weeks depending on the performance of the computer used. The attributes used for a Nearest Neighbor approach include dates available, genre, price, discount, etc.
@@ -191,12 +191,16 @@
 										<li>
 											Naive Bayes: A Naive Bayes classifier is a classification technique which is based on Baye's Theorem with an assumption of independence amongst the classifiers. Using this approach, we got an accuracy of 31.07%.
 										</li>
-									</ul></p>
+									</ul>
+									</p>
 
 									<h3 class="major">Recommending Coupons</h3>
 									<p>We could determine a few things about users by past coupon purchases, but some had very little history on the site. For users with no information from either their reported location or past purchases, we simply recommended coupons that we predicted to be popular. In cases where we had past purchases, we looked at their location by prefecture and small area as well as the genre of coupon they bought most frequently. We could then recommend the most popular coupons in those more specific subsections of the coupon area. However, for final coupon prediction, we tried Cosine Similarity methods
-									<li>
-											Cosine Similarity methods: Similar to Problem Set 4, where we used Cosine Similarity to predict the Caption of an image, we used a Cosine Similarity approach to predict whether a user purchased a particular coupon or not. The input vector has a list of features which correspond to the Coupon attributes like Usable Date, Usable period, Location, Genre etc.
+									<ul>
+										<li>
+											Baseline Prediction: By just predicting the most popular coupon in the given region of a particular user, we got an accuracy of 0.502%.
+										</li>
+											<li>Cosine Similarity methods: Similar to Problem Set 4, where we used Cosine Similarity to predict the Caption of an image, we used a Cosine Similarity approach to predict whether a user purchased a particular coupon or not. The input vector has a list of features which correspond to the Coupon attributes like Usable Date, Usable period, Location, Genre etc.
 											<ul>
 												<li>
 													Using only Cosine Similarity, the accuracy obtained was 0.78%
@@ -209,7 +213,10 @@
 												</li>
 											</ul>
 
-										</li></p>
+											</li>
+
+									</ul>
+										</p>
 
 								</div>
 							</div>
