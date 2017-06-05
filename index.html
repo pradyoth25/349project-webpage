@@ -67,7 +67,7 @@
 									<a href="background.html" class="image"><img src="images/crystals.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Our Task</h2>
-										<p>The primary goal of this project is to use past purchases and browsing history in order to predict which coupons a customer would buy in a given period of time. Our secondary goal is to perform an exploratory data analysis on the transactional data for 22,873 users on Ponpare, which is a leading Japanese coupon site. We are building a Recommender System, which is analogous to Collaborative Filtering. Recommender systems are very common today, especially for online shopping and video streaming services. Websites with the best recommendations will have the most customer satisfaction and retention.</p>
+										<p>The primary goal of this project is to use past purchases and browsing history in order to predict which coupons a customer would buy in a given period of time. Our secondary goal is to perform an exploratory data analysis on the transactional data for 22,873 users on Ponpare, which is a leading Japanese coupon site. We are building a Recommender System, which is analogous to Collaborative Filtering. Recommender systems are very common today, especially for online shopping and video streaming services. Technology giants like Amazon, Spotify, Netflix rely on recommendation systems for a large portion of their revenue. Websites with the best recommendations will have the most customer satisfaction and retention. And they help customers find products they may enjoy as well as limiting their exposure to products they don't want to see.</p>
 										<a href="background.html" class="special">Learn more</a>
 									</div>
 								</div>
@@ -79,8 +79,8 @@
 									<a href="approaches.html" class="image"><img src="images/pattern2.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Approaches</h2>
-											Before trying out any approach, we performed an exploratory analysis on our dataset and reported some findings in a graphical manner. We then tried out different approaches in order to check which algorithm provides the best result. We used Nearest Neighbor, Decision Trees and Naive Bayes approaches to predict the popularity of coupons based on some attributes like dates available, genre, price and discount. This was used as a baseline for our project.
-											In order to predict future user purchases, we used Cosine Similarity to compare past user views and purchases with the test set of coupons. For this part of the project, we used both purchase and visit logs, as well as Pearson Correlation Between Columns to get final results.
+											Before trying out any approach, we performed an exploratory analysis on our dataset and reported some findings in a graphical manner. We then tried to get a Baseline result by predicting the most popular coupon in a given region. For predicting the most popular coupon, we tried out different approaches. We used Nearest Neighbor, Decision Trees and Naive Bayes approaches to predict the popularity of coupons based on some attributes like dates available, genre, price and discount. We then used the most popular coupon to make a final prediction. 
+											Once we were finished with the baseline, we used Cosine Similarity to compare past user views and purchases with the test set of coupons. Some of the attributes which were part of the feature vector included Location, Coupon Genre, Usable Period etc. For this part of the project, we used both purchase and visit logs, as well as Pearson Correlation Between Columns to get final results.
 										</p>
 										<a href="approaches.html" class="special">Learn more</a>
 									</div>
@@ -93,7 +93,7 @@
 									<a href="results.html" class="image"><img src="images/pattern3.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">Key Results</h2>
-										<p>Since this was a Kaggle competition, we can compare our results to the leaderboard to get an idea of how we are doing. And while we weren't able to place extremely high in the leaderboards, our accuracy of 1.095% is definitely commendable, especially in the given time period.</p>
+										<p>Since this was a Kaggle competition, we can compare our results to the leaderboard to get an idea of how we are doing. And while we weren't able to place extremely high in the leaderboards, our accuracy of 1.095% is definitely commendable, especially in the given time period. We used a Cosine Similarity approach between the test coupons and each coupon which was viewed and purchased by a user in order to make the prediction. Primarily, the location information about a Coupon had the most significance.</p>
 										<a href="results.html" class="special">Learn more</a>
 									</div>
 								</div>
@@ -104,7 +104,7 @@
 								<div class="inner">
 									<h2 class="major">Final Report</h2>
 									<p>To download the final report in pdf form, please click the link below.</p>
-									<a href="FinalReport-2.pdf" class="special">Download pdf</a>
+									<a href="ML-FinalReport.pdf" class="special">Download pdf</a>
 
 								</div>
 							</section>

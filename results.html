@@ -58,7 +58,7 @@
 									<p>The accuracy of this kind of recommender tends to be very low. Although we recommended ten coupons for every user, many of them likely did not purchase a full ten during the test period. In addition, there are a very large number of possible coupons, often looking very similar across many attributes of our given data.</p>
 
 
-									<h3 class="major">Algorithms</h3>
+									<h3 class="major">Algorithms used in Baseline Prediction</h3>
 									<p>
 									<ul>
 										<li>
@@ -71,23 +71,28 @@
 									Nearest Neighbors is a commonly used algorithm for recommender systems. Since there were not many unique values for the attributes of the coupons, higher numbers of nearest neighbors produced more noise and reduced accuracy.</p>
 									<a class="image"><img src="images/classifieraccuracy2.png" alt="" /></a>
 									<p><b>Figure 1.</b> Coupon popularity accuracy on various classifiers</p>
+
 									<h3 class="major">Final Results and Future Work</h3>
 									<p>After building our model and recommending coupons, 
 									<li>
 										By just outputting the most popular coupon, we got an accuracy of .602% on our test data. While this was lower than we would have liked, it is within the range of results achieved by others on Kaggle.
-									</li> 
-									<li>
+									</li>
+
+									<ul>
+										Using Cosine Similarity
+										<li>
 										Using only Cosine Similarity, the accuracy obtained was 0.78%
-									</li>
-									<li>
+										</li>
+										<li>
 										Taking Coupon Viewed Logs into Consideration, the accuracy was 0.89%
-									</li>
-									<li> Using Pearson Correlation between Sparse Matrices, we got 1.095%
-												</li>
+										</li>
+										<li> Using Pearson Correlation between Sparse Matrices, we got 1.095%
+										</li>
+									</ul>
 
 									</p>
 									<p>Since the Cosine Similarity got a much higher accuracy than our baseline, we were pleased with the results. It was helpful that we could see how the accuracies improved every time we included additional data or methods in our approach.</p>
-									<p>If we continued to work on this project, we would like to try some feature engineering from the available data. Unfortunately, since the dataset is so large, if we had added many more attributes to it the algorithms would have taken much longer to run. Most of the top scorers on Kaggle reported run times of between 24 hours to days, on very high end servers. This also allowed us less flexibility in trying out different approaches.</p>
+									<p>If we continued to work on this project, we would like to try some feature engineering on the available data. Unfortunately, since the dataset is so large, if we had added many more attributes to it the algorithms would have taken much longer to run. Most of the top scorers on Kaggle reported run times of between 24 hours to days, on very high end servers. This also allowed us less flexibility in trying out different approaches.</p>
 
 								</div>
 							</div>
