@@ -182,7 +182,7 @@
 									<p>We could determine a few things about users by past coupon purchases, but some had very little history on the site. For users with no information from either their reported location or past purchases, we simply recommended coupons that we predicted to be popular in our baseline method. In cases where we had past purchases, we looked at their location by prefecture and small area as well as the genre of coupon they bought most frequently. We could then recommend the most popular coupons in those more specific subsections of the coupon area. However, for final coupon prediction, we tried Cosine Similarity methods.
 									<ul>
 										<li>
-											Baseline Prediction: By just predicting the most popular coupon in the given region of a particular user, we got an accuracy of 0.602%.
+											Baseline Prediction: We recommended the most popular coupons in a user's region to get a baseline accuracy we could compare to our later results.
 										</li>
 											<li>Cosine Similarity methods: Similar to Problem Set 4, where we used Cosine Similarity to predict the caption of an image, we used a Cosine Similarity approach to predict whether a user purchased a particular coupon or not. The input vector has a list of features which correspond to the Coupon attributes like Usable Date, Usable period, Location, Genre, etc. We executed this in three stages: using only the purchase logs, then adding the view logs, and finally using Pearson Correlation Between Columns because it was a sparse matrix.
 					</li>
